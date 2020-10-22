@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Vampiro One';
+    background-color: rgb(221, 206, 179);
+}
+.Coca{
+    max-width: 2000px;
+    position: relative;
+    margin: auto;
+    margin-left: 250px;
+    
+}
+.Slide{
+    display: none;
+}
+.number{
+    color: floralwhite;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(166, 142, 221);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color:rgb(146, 116, 216);
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
